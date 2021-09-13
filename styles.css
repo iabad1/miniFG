@@ -49,8 +49,10 @@ a{
     padding: 0.3125rem 0;
 }
 
+
 #nav-links li{
     list-style: none;
+    text-align: center;
 }
 
 #hamburger-menu-container{
@@ -82,7 +84,28 @@ a{
     display: none;
 }
 
+.open{
 
+    display: flex;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+   
+    line-height: 3rem;
+    background-color: var(--secondary-color);
+    
+    
+}
+
+.open > ul{
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 #signUp-button{
@@ -93,19 +116,21 @@ a{
     border-radius: 0.3125rem;
 }
 
-/*Media Query for Phone Screens*/
-@media (max-width: 1085px){
-    .open{
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-       
-        background-color: var(--shadow-color);
-        
-        
-    }
+
+.open-line{
+    position: absolute;
+    left: 90%;
 }
+.left-slant.open-line{
+    transform: rotate(-45deg);
+}
+.middle.open-line{
+    display: none;
+}
+.right-slant.open-line{
+    transform: rotate(45deg);
+}
+
 /*Media Query for Laptop Screens*/
 @media (min-width: 1085px){
 
@@ -127,6 +152,9 @@ a{
         flex-direction: row;
         align-items: center;
 
+        height: 0;
+        width: auto;
+
        
     }
     #nav-links > ul{
@@ -137,6 +165,7 @@ a{
     #nav-links li{
         margin-left: 30px;
     }
+    
 
     
 }

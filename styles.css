@@ -45,9 +45,17 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    padding: 0.3125rem 0;
+}
+
+#nav-links li{
+    list-style: none;
 }
 
 #hamburger-menu-container{
+
+    z-index: 1;
     position: absolute;
     left: 90%;
    
@@ -68,12 +76,14 @@ a{
 
     background-color: var(--dark-color);
     
-
 }
 
-.nav-links{
+.close{
     display: none;
 }
+
+
+
 
 #signUp-button{
     
@@ -83,6 +93,19 @@ a{
     border-radius: 0.3125rem;
 }
 
+/*Media Query for Phone Screens*/
+@media (max-width: 1085px){
+    .open{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+       
+        background-color: var(--shadow-color);
+        
+        
+    }
+}
 /*Media Query for Laptop Screens*/
 @media (min-width: 1085px){
 
@@ -97,20 +120,23 @@ a{
         align-items: center;
     }
 
-    .nav-links{
+    #nav-links{
+        position: relative;
         display: flex;
+        justify-content: center;
         flex-direction: row;
         align-items: center;
 
        
     }
-    .nav-links > ul{
+    #nav-links > ul{
         display: flex;
         flex-direction: row;
     }
     
-    .nav-links li{
-        list-style: none;
+    #nav-links li{
         margin-left: 30px;
     }
+
+    
 }

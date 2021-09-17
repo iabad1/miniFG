@@ -376,7 +376,7 @@ footer{
     justify-content: center;
     align-items: center;
 
-    gap: 1rem;
+    gap: 4rem;
     width: 100%;
     margin: 0 auto;
     
@@ -387,11 +387,6 @@ footer{
     height: 20px;
 }
 
-.footer-links-cont{
-    width: 5%;
-   
-
-}
 /*****Media Query for Laptop Screens****/
 @media (min-width: 768px){
     

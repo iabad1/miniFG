@@ -331,6 +331,7 @@ input:focus, textarea:focus{
 
 input[type="submit"]{
 
+    -webkit-appearance: none;
     font-family: Yanone Kaffeesatz, Arial;
     font-size: 1.5rem;
 

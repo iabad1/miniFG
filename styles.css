@@ -377,12 +377,13 @@ footer{
     justify-content: center;
     align-items: center;
 
-    gap: 4rem;
     width: 100%;
     margin: 0 auto;
     
 }
-
+.footer-links-cont{
+    width: 4.375rem;
+}
 .footer-links-cont .footer-social-link{
     width: 20px;
     height: 20px;

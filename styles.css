@@ -5,9 +5,10 @@
 
     --primary-color: #ffffff;
     --secondary-color: #6495ED;
+    --secondary-purp: #9664ed;
     --secondary-light-color: #a2bdee;
     --secondary-dark-color: #5b87d8;
-    --red-color: #D22B2B;
+    --red-color: #ed6464 ;
 
     --shadow-color: #f0f0f0;
     --light-color: #f7fafd;
@@ -196,6 +197,10 @@ section{
     background-color: var(--secondary-color);
     padding: 0.625rem;
     border-radius: 0.3125rem;
+}
+
+.signUp-button.interest-form{
+    background-color: var(--red-color);
 }
 .page-button{
     display: flex;
